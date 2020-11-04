@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    background-color: #253237;
+}
+
+.container {
+    width: 50%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    min-height: 80vh;
+    width: 30rem;
+    box-shadow:
+        0 20px 20px rgba(0, 0, 0, 0.5), 
+        0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    transform-style: preserve-3d;
+}
+
+.pic {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.7s ease;
+    opacity: 0.8;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        #ff00ffde,
+        #00c3ffe8
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info {
+    transition: all 0.7s ease;
+}
+
+.info h1 {
+    color: #ff00ffde;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem 1rem 0rem;
+    color: #00c3ffe8;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    color: #00c3ffe8;
+}
+
+.social button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00c3ffe8;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+}
+
+.social button:active, .social button:focus {
+    outline: none;
+}
+
+.social button i {
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.social button:hover i {
+    color: #ff00ffde;
+}
