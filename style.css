@@ -125,3 +125,9 @@ body {
 .social button:hover i {
     color: #ff00ffde;
 }
+
+.changeText {
+    height: 2rem;
+    padding-right: 2px;
+    border-right: 2px solid #00c3ffe8;
+}
